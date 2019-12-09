@@ -393,10 +393,7 @@ html body #nav {
 .main-before-top-container .owl-pagination {
      transform:translateX(50%) !important;
 }
-.footer-container .grid-full .clearer {
-     /* background-color:#ebebeb;
-     */
-}
+
 /* price */
 .special-price .price-label, .special-price .price{
      color:#cc0000 !important;
@@ -821,10 +818,6 @@ ul li a span {
 .product-view .product-shop .price-box .old-price .price span{
      text-decoration:none !important;
 }
-/* .special-price .price, .special-price .price-label{
-     color:#49256e !important;
-}
- */
 .tier-prices{
      padding:0;
      color:#ff7070;
@@ -1092,23 +1085,12 @@ i.fas.fa-search:hover{
      .threeway-images-home.carousel-images-wrapper{
          width:90% !important;
     }
-     /*.main-before-top-container .owl-carousel .owl-item img{
-         min-height:500px !important;
-         width:auto !important;
-         box-shadow:inset 0 0 0 1000px rgba(0,0,0,.4);
-    }
-     */
+
      .main-before-top-container .owl-carousel{
          background:#000;
     }
      .hero-caption-holder{
          position:relative;
-    }
-     .hero-banner .owl-carousel .owl-item .fade-on-slideshow-hover img{
-         /* width:auto !important;
-         height:600px;
-         box-shadow:inset 0 0 0 1000px rgba(0,0,0,.4);
-         */
     }
      .hero-banner .owl-carousel .owl-item .fade-on-slideshow-hover img.duoclean-logo-home{
          width:280px !important;
@@ -1183,7 +1165,7 @@ i.fas.fa-search:hover{
          margin-top:2rem;
     }
 }
-/* Media queries */
+/* Media Queries */
 @media screen and (max-width:768px){
      .page-content img.home-featured-image{
          width:215px;
@@ -1193,8 +1175,6 @@ i.fas.fa-search:hover{
          padding-left:0;
          padding-right:0;
     }
-}
-@media screen and (max-width:720px){
      .newsletter-signup{
          width:90% !important;
     }
@@ -1205,12 +1185,7 @@ i.fas.fa-search:hover{
          background-image:url("/assets/app/public/images/magento/infortis/_shared/slider-arrows.png");
     }
 }
- @media screen and (max-width:479px) {
-     /* i.fa.fa-shopping-cart{
-         position:relative;
-         left:8px;
-    }
-     */
+ @media screen and (max-width:480px) {
      i.fa.fa-shopping-cart{
          position:absolute;
          top:-70px;
@@ -1228,8 +1203,6 @@ i.fas.fa-search:hover{
     }
      .logo img{
          max-width:88px;
-         /* margin-left:60px;
-         */
     }
      .header-primary-container + .nav-container{
          display:block;
@@ -1244,26 +1217,10 @@ i.fas.fa-search:hover{
      .fa-shopping-cart:before{
          width:50px;
     }
-     /* .mobnav-trigger{
-         position:absolute;
-         top:56px;
-         z-index:10000;
-    }
-     .mobnav-trigger .trigger-icon + span {
-         display:none;
-    }
-     .header .logo-wrapper, .logo{
-         text-align:left;
-    }
-     */
      .hero-banner{
          height:450px;
          padding-bottom:3rem;
          background:#000;
-    }
-     .hero-banner .item a img{
-         /* filter:brightness(50%);
-         */
     }
      .home-banner-heading{
          color:#fff;
@@ -1347,23 +1304,6 @@ i.fas.fa-search:hover{
          line-height:1;
          margin-top:-10px;
     }
-}
-
-/*Cart on Tablet view*/
-@media only screen and (min-width:768px) and (max-width:959px) {
-     .feature-icon-hover .hide-below-960 {
-         display:block;
-    }
-}
-@media only screen and (min-width:480px) and (max-width:768px) {
-     .feature-icon-hover .hide-below-960 {
-         display:block !important;
-         position:relative;
-         left:12px;
-         top:5px;
-    }
-}
-@media only screen and (max-width:480px){
      .col{
          flex-wrap:wrap;
     }
@@ -1381,3 +1321,18 @@ i.fas.fa-search:hover{
          right:-60px;
     }
 }
+/* Fix Cart on Tablet */
+@media only screen and (min-width:768px) and (max-width:959px) {
+     .feature-icon-hover .hide-below-960 {
+         display:block;
+    }
+}
+@media only screen and (min-width:480px) and (max-width:768px) {
+     .feature-icon-hover .hide-below-960 {
+         display:block !important;
+         position:relative;
+         left:12px;
+         top:5px;
+    }
+}
+
