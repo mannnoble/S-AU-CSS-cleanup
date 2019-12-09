@@ -42,6 +42,10 @@ body{
 .text-right{
      text-align:right !important;
 }
+.extra-info{
+     font-size:12px;
+     line-height:1.5;
+}
 /* Custom Flex Grid for product detail page features */
 .row {
      display:flex;
@@ -90,7 +94,29 @@ h2 {
 .banner-h1 span {
      display:block;
 }
-
+* h1 ,h1.banner-h1, .banner-h1 a{
+     font-size:32px !important;
+     color:#49256e;
+}
+.page-content h1 a{
+     color:#49256e;
+     font-size:28px;
+     text-decoration:none;
+     letter-spacing:0.16rem;
+}
+.page-content h1 a.shop-now{
+     background-color:#49256e;
+     color:#fff;
+     font-size:14px;
+     padding:14px 40px;
+     display:inline-block;
+}
+.banner-h1 span {
+     display:block;
+}
+h2 {
+     text-transform:none !important;
+}
 /* Button Styles */
 button, .button, .button a, button a{
      font-family:'Montserrat' !important;
@@ -123,7 +149,6 @@ button, .button, .button a, button a{
 }
 
 /* Product Features */
-
 .feature-detail-container{
      padding-left:20px;
      padding-right:20px;
@@ -246,19 +271,6 @@ html body #nav {
      width:400vh !important;
      height:300vh !important;
 }
-.page-content h1 a{
-     color:#49256e;
-     font-size:28px;
-     text-decoration:none;
-     letter-spacing:0.16rem;
-}
-.page-content h1 a.shop-now{
-     background-color:#49256e;
-     color:#fff;
-     font-size:14px;
-     padding:14px 40px;
-     display:inline-block;
-}
 .banner-info{
      position:absolute;
      top:0;
@@ -284,82 +296,6 @@ html body #nav {
      filter:brightness(100%);
 }
 
-/* Template Fixes */
-.user-menu .line-break-after{
-     display:none;
-}
-.header-top.clearer{
-     display:none;
-}
-.header-primary-container + .nav-container{
-     z-index:10000;
-}
-.top-links{
-     padding-right:40px;
-}
-.gen-tabs .tabs-panels{
-     background-color:#fff;
-}
-.gen-tabs .tabs li{
-     display:flex;
-     flex:1;
-}
-.gen-tabs .tabs li a{
-     width:100%;
-     padding:12px;
-     text-align:center;
-     color:#808080 !important;
-}
-.gen-tabs .tabs.clearer{
-     display:flex;
-     justify-content:space-evenly;
-     width:100%;
-}
-.gen-tabs-style1 .tabs a.current{
-     padding-top:12px;
-}
-
-.gen-tabs.accor .tabs{
-     display:none;
-     /* hides desktop accordion as in base.css by CMB */
-}
-.nav-regular .nav-panel--dropdown > li > a, .nav-regular .nav-submenu--mega > li > a, .nav-regular li.level0>a{
-     text-transform:none !important;
-}
-.product-image .mousetrap {
-     z-index:10 !important;
-}
-.product-manual-image div p img{
-     height:unset !important;
-     max-width:100% !important;
-}
-.paypal-or{
-     margin:auto;
-     text-align:center;
-}
-.paypal-or + a{
-     display:block;
-     padding-top:12px;
-}
-
-#mini-cart > div.dropdown-menu.left-hand:hover {
-     z-index:999999 !important;
-}
-#grid_2618{
-     width:100%;
-     margin:0;
-}
-.hero-banner.hide{
-     display:none;
-}
-
-
-.fa.fa-search{
-     padding-right:16px;
-     padding-top:4px;
-}
-
-
 /* New Banner Styles */
 /* temporary fix -- misspelt class*/
 .new-banner, .banner-new{
@@ -376,6 +312,15 @@ html body #nav {
 .new-banner-home.text-right{
      float:right;
 }
+
+.collapsible .opener{
+     height:44px;
+     width:44px;
+     top:-8px;
+     background-image:url("/assets/app/public/images/magento/infortis/ultra-megamenu/opener.png");
+}
+
+/* Footer */
 .footer-top{
      background:none;
      padding-top:1.2rem;
@@ -385,12 +330,6 @@ html body #nav {
      margin-bottom:0 !important;
      font-weight:300 !important;
 }
-.collapsible .opener{
-     height:44px;
-     width:44px;
-     top:-8px;
-     background-image:url("/assets/app/public/images/magento/infortis/ultra-megamenu/opener.png");
-}
 .footer .collapsible .opener:hover{
      background-color:#49256e;
 }
@@ -399,33 +338,11 @@ html body #nav {
      margin-bottom:0 !important;
      font-weight:300 !important;
 }
-.extra-info{
-     font-size:12px;
-     line-height:1.5;
+.footer-primary .grid-full{
+     display:none;
 }
-.duoclean-banner-inner-layer .shop-now , .button.button span {
-     margin-top:0;
-}
-* h1 ,h1.banner-h1, .banner-h1 a{
-     font-size:32px !important;
-     color:#49256e;
-}
-.antiallergen-banner .banner-h1{
-     padding-top:18%;
-}
-.banner-h1 span {
-     display:block;
-}
-h2 {
-     text-transform:none !important;
-}
-.banner-body-text{
-     margin-top:20px !important;
-}
-.multiflex-banner-inner-2 {
-     left:69% !important;
-     top:52% !important;
-}
+
+/* Cart */
 .add-cart-wrapper button span span {
      width:140px;
      max-width:140px;
@@ -441,31 +358,7 @@ h2 {
 .feature-icon-hover:hover .caret{
      color:#fff !important;
 }
-@media only screen and (max-width:479px) {
-     .feature-icon-hover .hide-below-960 {
-         display:block !important;
-    }
-     .hide-on-mobile{
-         display:none;
-    }
-     .sm-pt-2{
-         padding-top:2rem;
-    }
-     /* Float reset temp */
-     .dropdown, .user-menu .links, .user-menu>*{
-         float:right !important;
-         padding-top:14px;
-    }
-     .dropdown-toggle.cover>div{
-         margin-top:9%;
-    }
-     #mini-cart{
-         right:20px;
-    }
-     * h1, h1.banner-h1, .banner-h1 a{
-         font-size:24px !important;
-    }
-}
+
 .level1.nav-submenu{
      top:0;
      left:0;
@@ -636,7 +529,6 @@ h2 {
 #onepage-guest-register-button span{
      background-color:#49256e;
 }
-/* Mobile nav fixes */
 .mobnav-trigger{
      background-color:#fff;
 }
@@ -705,11 +597,9 @@ h2 {
 .btn.btn-filled br{
      display:none;
 }
-/* Fix -- warranty submit button positioning */
 .register-warranty-form .button.left{
      left:15% !important;
 }
-/* Fix margin-left alignment */
 .ml-remove, .ml-remove *{
      margin-left:0 !important;
 }
@@ -740,9 +630,6 @@ h2 {
 }
 .g-recaptcha{
      padding-bottom:20px;
-}
-.footer-primary .grid-full{
-     display:none;
 }
 iframe.main-container {
      padding:0 !important;
@@ -780,6 +667,78 @@ i.fa.fa-shopping-cart{
      color:#fff;
 }
 /* Fixes */
+/* Template Fixes */
+.user-menu .line-break-after{
+     display:none;
+}
+.header-top.clearer{
+     display:none;
+}
+.header-primary-container + .nav-container{
+     z-index:10000;
+}
+.top-links{
+     padding-right:40px;
+}
+.gen-tabs .tabs-panels{
+     background-color:#fff;
+}
+.gen-tabs .tabs li{
+     display:flex;
+     flex:1;
+}
+.gen-tabs .tabs li a{
+     width:100%;
+     padding:12px;
+     text-align:center;
+     color:#808080 !important;
+}
+.gen-tabs .tabs.clearer{
+     display:flex;
+     justify-content:space-evenly;
+     width:100%;
+}
+.gen-tabs-style1 .tabs a.current{
+     padding-top:12px;
+}
+.gen-tabs.accor .tabs{
+     display:none;
+     /* hides desktop accordion as in base.css by CMB */
+}
+.nav-regular .nav-panel--dropdown > li > a, .nav-regular .nav-submenu--mega > li > a, .nav-regular li.level0>a{
+     text-transform:none !important;
+}
+.product-image .mousetrap {
+     z-index:10 !important;
+}
+.product-manual-image div p img{
+     height:unset !important;
+     max-width:100% !important;
+}
+.paypal-or{
+     margin:auto;
+     text-align:center;
+}
+.paypal-or + a{
+     display:block;
+     padding-top:12px;
+}
+
+#mini-cart > div.dropdown-menu.left-hand:hover {
+     z-index:999999 !important;
+}
+#grid_2618{
+     width:100%;
+     margin:0;
+}
+.hero-banner.hide{
+     display:none;
+}
+
+.fa.fa-search{
+     padding-right:16px;
+     padding-top:4px;
+}
 .threeway-images-home.carousel-images-wrapper{
      width:64% !important;
 }
@@ -958,7 +917,101 @@ li.success-msg{
 .error-msg:focus{
      display:none;
 }
- /* query override */
+.newsletter-signup{
+     border-top:1px solid #ebebeb !important;
+     width:600px;
+     margin:auto;
+     margin-bottom:50px;
+}
+i.fas.fa-search:hover{
+     color:#49256e;
+     font-size:18px;
+     transition:all .5s ease;
+}
+/* temp fix */
+#HF1vMkqPtqAjSaGx, #grid_1199 {
+     display:none;
+}
+.owl-carousel .owl-item img{
+     width:100%;
+}
+.header .dropdown-menu{
+     background:#fff;
+}
+#mini-cart .dropdown-menu .empty, #mini-cart .dropdown-menu{
+     color:#777;
+}
+.dropdown-toggle .amount{
+     padding:0.4rem;
+}
+ .hero-banner .owl-carousel .owl-item .fade-on-slideshow-hover img.duoclean-logo-home{
+     width:280px !important;
+     height:auto !important;
+     filter:brightness(100%) !important;
+}
+#grid-container-1599{
+     background-color:#ebebeb;
+}
+[data-bv-show="rating_summary"] .bv_main_container .bv_button_buttonMinimalist {
+     color:#49256e !important;
+}
+[data-bv-show=rating_summary] .bv_main_container .bv_button_buttonMinimalist{
+     font-weight:700 !important;
+}
+.rating-stars-links {
+     display:none;
+}
+.owl-controls {
+     opacity:1;
+     transition:opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
+     -moz-transition:opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
+     -webkit-transition:opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
+     -o-transition:opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
+}
+.owl-controls > div {
+     top:32%;
+     border:1px solid #eee;
+     border-radius:5px;
+     background-color:#fff;
+     position:absolute;
+     width:50px;
+     height:50px;
+     background-image:url(/assets/app/public/images/magento/infortis/_shared/slider-arrows.png);
+}
+.owl-prev {
+     background-position:-2px 0;
+     left:1px;
+}
+.owl-next {
+     background-position:-48px 0;
+     right:1px;
+}
+/* Media Queries */
+@media only screen and (max-width:479px) {
+     .feature-icon-hover .hide-below-960 {
+         display:block !important;
+    }
+     .hide-on-mobile{
+         display:none;
+    }
+     .sm-pt-2{
+         padding-top:2rem;
+    }
+     /* Float reset temp */
+     .dropdown, .user-menu .links, .user-menu>*{
+         float:right !important;
+         padding-top:14px;
+    }
+     .dropdown-toggle.cover>div{
+         margin-top:9%;
+    }
+     #mini-cart{
+         right:20px;
+    }
+     * h1, h1.banner-h1, .banner-h1 a{
+         font-size:24px !important;
+    }
+}
 @media screen and (min-width:1440px){
      .threeway-images-home.carousel-images-wrapper{
          width:48% !important;
@@ -1295,50 +1348,7 @@ li.success-msg{
          margin-top:-10px;
     }
 }
-.newsletter-signup{
-     border-top:1px solid #ebebeb !important;
-     width:600px;
-     margin:auto;
-     margin-bottom:50px;
-}
-i.fas.fa-search:hover{
-     color:#49256e;
-     font-size:18px;
-     transition:all .5s ease;
-}
-/* temp fix */
-#HF1vMkqPtqAjSaGx, #grid_1199 {
-     display:none;
-}
-.owl-carousel .owl-item img{
-     width:100%;
-}
-.header .dropdown-menu{
-     background:#fff;
-}
-#mini-cart .dropdown-menu .empty, #mini-cart .dropdown-menu{
-     color:#777;
-}
-.dropdown-toggle .amount{
-     padding:0.4rem;
-}
- .hero-banner .owl-carousel .owl-item .fade-on-slideshow-hover img.duoclean-logo-home{
-     width:280px !important;
-     height:auto !important;
-     filter:brightness(100%) !important;
-}
-#grid-container-1599{
-     background-color:#ebebeb;
-}
-[data-bv-show="rating_summary"] .bv_main_container .bv_button_buttonMinimalist {
-     color:#49256e !important;
-}
-[data-bv-show=rating_summary] .bv_main_container .bv_button_buttonMinimalist{
-     font-weight:700 !important;
-}
-.rating-stars-links {
-     display:none;
-}
+
 /*Cart on Tablet view*/
 @media only screen and (min-width:768px) and (max-width:959px) {
      .feature-icon-hover .hide-below-960 {
@@ -1352,48 +1362,6 @@ i.fas.fa-search:hover{
          left:12px;
          top:5px;
     }
-}
-/*.owl-carousel .owl-dots {
-     width:intrinsic;
-     width:-moz-max-content;
-     width:-webkit-max-content;
-     margin:auto;
-}
-.owl-carousel button.owl-dot {
-     width:10px;
-     height:10px;
-     border-radius:50%;
-     background-color:#eee;
-     margin:0 2px;
-}
-.owl-carousel button.owl-dot.active {
-     background-color:#999;
-}
-*/
-.owl-controls {
-     opacity:1;
-     transition:opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
-     -moz-transition:opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
-     -webkit-transition:opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
-     -o-transition:opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
-}
-.owl-controls > div {
-     top:32%;
-     border:1px solid #eee;
-     border-radius:5px;
-     background-color:#fff;
-     position:absolute;
-     width:50px;
-     height:50px;
-     background-image:url(/assets/app/public/images/magento/infortis/_shared/slider-arrows.png);
-}
-.owl-prev {
-     background-position:-2px 0;
-     left:1px;
-}
-.owl-next {
-     background-position:-48px 0;
-     right:1px;
 }
 @media only screen and (max-width:480px){
      .col{
