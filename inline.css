@@ -1,121 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 /* Settings*/
-/* new banner WIP */
 body{
      font-family:'Montserrat', sans-serif !important;
      -webkit-font-smoothing:antialiased;
      -moz-font-smoothing:antialiased;
      -o-font-smoothing:antialiased;
-}
-/* Temp Fix*/
-.user-menu .line-break-after{
-     display:none;
-}
-.header-top.clearer{
-     display:none;
-}
-.header-primary-container + .nav-container{
-     z-index:10000;
-}
-.top-links{
-     padding-right:40px;
-}
-.row {
-     display:flex;
-     flex-direction:row;
-     flex-wrap:wrap;
-     width:100%;
-}
-.col {
-     display:flex;
-     /* flex-direction:column;
-     */
-     flex-basis:100%;
-     justify-content:flex-start;
-}
-.feature-img-container{
-}
-.feature-detail-container{
-     padding-left:20px;
-     padding-right:20px;
-}
-.feature-detail-container p{
-     margin:0;
-     font-weight:200;
-}
-.feature-detail-container .banner-h1 a{
-     font-size:inherit !important;
-}
-.gen-tabs .tabs-panels{
-     background-color:#fff;
-}
-.gen-tabs .tabs li{
-     display:flex;
-     flex:1;
-}
-.gen-tabs .tabs li a{
-     width:100%;
-     padding:12px;
-     text-align:center;
-     color:#808080 !important;
-}
-/*Test new layout*/
-.gen-tabs .tabs.clearer{
-     display:flex;
-     justify-content:space-evenly;
-     width:100%;
-}
-.gen-tabs-style1 .tabs a.current{
-     padding-top:12px;
-}
-.float-left{
-     float:left;
-}
-.feature-img{
-     height:200px;
-     width:200px;
-}
-.product-features{
-     padding-top:2rem;
-}
-.gen-tabs.accor .tabs{
-     display:none;
-     /* hides desktop accordion as in base.css by CMB */
-}
-/* Nav text transform unset*/
-.nav-regular .nav-panel--dropdown > li > a, .nav-regular .nav-submenu--mega > li > a, .nav-regular li.level0>a{
-     text-transform:none !important;
-}
-.product-image .mousetrap {
-     z-index:10 !important;
-}
-.product-manual-image div p img{
-     height:unset !important;
-     max-width:100% !important;
-}
-.home-secondary-banner{
-     padding:6rem 2rem;
-}
-.home-secondary-banner .banner-cta{
-     border:1px solid transparent !important;
-     background-color:#49256e;
-     color:#fff;
-     font-weight:700;
-     text-decoration:none;
-     padding:14px 40px;
-     margin-top:20px;
-     display:inline-block;
-}
-.home-section .page-content h3 a{
-     font-size:28px;
-     text-decoration:none;
-     text-transform:uppercase;
-     color:#49256e;
-     font-weight:bold;
-     letter-spacing:0.16rem;
-}
-html body #nav {
-     z-index:40;
 }
 .pb-0{
      padding-bottom:0 !important;
@@ -144,6 +33,164 @@ html body #nav {
 .pt-large{
      padding-top:12rem;
 }
+.hide{
+     display:none;
+}
+/* Custom Flex Grid for product detail page features */
+.row {
+     display:flex;
+     flex-direction:row;
+     flex-wrap:wrap;
+     width:100%;
+}
+.col {
+     display:flex;
+     /* flex-direction:column;
+     */
+     flex-basis:100%;
+     justify-content:flex-start;
+}
+/* Product Features */
+.feature-detail-container{
+     padding-left:20px;
+     padding-right:20px;
+}
+.feature-detail-container p{
+     margin:0;
+     font-weight:200;
+}
+.feature-detail-container .banner-h1 a{
+     font-size:inherit !important;
+}
+.feature-img{
+     height:200px;
+     width:200px;
+}
+.product-features{
+     padding-top:2rem;
+}
+/* Responsive menu forced layout */
+html body #nav {
+     z-index:40;
+}
+/* Logo Styles */
+.logo img{
+     max-width:160px;
+}
+ /* Text Styles */
+.text-bolded{
+     font-weight:700;
+}
+.text-centered{
+     text-align:center !important;
+}
+.text-white, .text-white a, .text-white h1, .text-white h2{
+     color:#fff !important;
+}
+.text-left{
+     text-align:left !important;
+}
+.text-right{
+     text-align:right !important;
+}
+.text-primary-color{
+     color:#49256e;
+}
+.exclusive-text {
+     padding-top:14px;
+     padding-bottom:14px;
+     background:#ebebeb;
+     font-size:14px;
+}
+.exclusive-text span{
+     font-weight:700;
+     color:#49256e;
+}
+.welcome-msg *, .userCode, .userName{
+     color:#fff !important;
+}
+/* Home page */
+.home-secondary-banner{
+     padding:6rem 2rem;
+}
+.home-secondary-banner .banner-cta{
+     border:1px solid transparent !important;
+     background-color:#49256e;
+     color:#fff;
+     font-weight:700;
+     text-decoration:none;
+     padding:14px 40px;
+     margin-top:20px;
+     display:inline-block;
+}
+.home-section .page-content h3 a{
+     font-size:28px;
+     text-decoration:none;
+     text-transform:uppercase;
+     color:#49256e;
+     font-weight:bold;
+     letter-spacing:0.16rem;
+}
+/* Subscribe Section */
+.subscribe-section{
+     background:#f5f5f5;
+     background-image:url('https://cdn-1.mysagestore.com/cb41b2cc48953213e03cfb9f7ed38435/contents/ckfinder/images/subscribe.jpg');
+     background-size:cover;
+}
+/* IF award sticker on WV203 */
+.if-award-sticker{
+     width:120px !important;
+     height:auto !important;
+     filter:brightness(100%);
+}
+/* Template Fixes */
+.user-menu .line-break-after{
+     display:none;
+}
+.header-top.clearer{
+     display:none;
+}
+.header-primary-container + .nav-container{
+     z-index:10000;
+}
+.top-links{
+     padding-right:40px;
+}
+.gen-tabs .tabs-panels{
+     background-color:#fff;
+}
+.gen-tabs .tabs li{
+     display:flex;
+     flex:1;
+}
+.gen-tabs .tabs li a{
+     width:100%;
+     padding:12px;
+     text-align:center;
+     color:#808080 !important;
+}
+.gen-tabs .tabs.clearer{
+     display:flex;
+     justify-content:space-evenly;
+     width:100%;
+}
+.gen-tabs-style1 .tabs a.current{
+     padding-top:12px;
+}
+.gen-tabs.accor .tabs{
+     display:none;
+     /* hides desktop accordion as in base.css by CMB */
+}
+.nav-regular .nav-panel--dropdown > li > a, .nav-regular .nav-submenu--mega > li > a, .nav-regular li.level0>a{
+     text-transform:none !important;
+}
+.product-image .mousetrap {
+     z-index:10 !important;
+}
+.product-manual-image div p img{
+     height:unset !important;
+     max-width:100% !important;
+}
 .paypal-or{
      margin:auto;
      text-align:center;
@@ -151,14 +198,6 @@ html body #nav {
 .paypal-or + a{
      display:block;
      padding-top:12px;
-}
-.hide{
-     display:none;
-}
-.subscribe-section{
-     background:#f5f5f5;
-     background-image:url('https://cdn-1.mysagestore.com/cb41b2cc48953213e03cfb9f7ed38435/contents/ckfinder/images/subscribe.jpg');
-     background-size:cover;
 }
 #mini-cart > div.dropdown-menu.left-hand:hover {
      z-index:999999 !important;
@@ -256,57 +295,12 @@ html body #nav {
      left:unset;
      right:7%;
 }
-/* .hero-banner-new .owl-carousel .owl-item p a img.if-award-sticker */
-.if-award-sticker{
-     width:120px !important;
-     height:auto !important;
-     filter:brightness(100%);
-}
-/* Logo Styles */
-.logo img{
-     max-width:160px;
-}
- /* Text Styles */
-.text-bolded{
-     font-weight:700;
-}
-.text-centered{
-     text-align:center !important;
-}
-.text-white, .text-white a, .text-white h1, .text-white h2{
-     color:#fff !important;
-}
-.text-left{
-     text-align:left !important;
-}
-.text-right{
-     text-align:right !important;
-}
-.text-primary-color{
-     color:#49256e;
-}
-.exclusive-text {
-     padding-top:14px;
-     padding-bottom:14px;
-     background:#ebebeb;
-     font-size:14px;
-}
-.exclusive-text span{
-     font-weight:700;
-     color:#49256e;
-}
-.welcome-msg *, .userCode, .userName{
-     color:#fff !important;
-}
-/* Styles */
-/* Header Styles */
 .header-primary{
      padding:0 !important;
 }
 .header-container{
      background-color:#fff !important;
 }
-/* Heading Styles */
 h2 {
      letter-spacing:0;
 }
@@ -332,12 +326,6 @@ h2 {
 }
 .banner-h1 span {
      display:block;
-}
-.antiallergen-banner .banner-h1, .cyclonic-banner .banner-h1{
-     padding-top:18%;
-}
-.duoclean-banner .banner-h1{
-     padding-top:8%;
 }
 .fa.fa-search{
      padding-right:16px;
