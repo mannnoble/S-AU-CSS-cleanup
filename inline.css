@@ -42,6 +42,9 @@ body{
 .text-right{
      text-align:right !important;
 }
+.text-centered{
+     text-align:center;
+}
 .extra-info{
      font-size:12px;
      line-height:1.5;
@@ -70,6 +73,7 @@ body{
 }
 h2 {
      letter-spacing:0;
+     text-transform:none !important;
 }
 h2.sec-title{
      font-size:32px;
@@ -88,15 +92,8 @@ h2.sec-title{
      font-size:32px !important;
      color:#49256e;
 }
-h2 {
-     text-transform:none !important;
-}
 .banner-h1 span {
      display:block;
-}
-* h1 ,h1.banner-h1, .banner-h1 a{
-     font-size:32px !important;
-     color:#49256e;
 }
 .page-content h1 a{
      color:#49256e;
@@ -114,9 +111,7 @@ h2 {
 .banner-h1 span {
      display:block;
 }
-h2 {
-     text-transform:none !important;
-}
+
 /* Button Styles */
 button, .button, .button a, button a{
      font-family:'Montserrat' !important;
@@ -180,9 +175,6 @@ html body #nav {
  /* Text Styles */
 .text-bolded{
      font-weight:700;
-}
-.text-centered{
-     text-align:center !important;
 }
 .text-white, .text-white a, .text-white h1, .text-white h2{
      color:#fff !important;
